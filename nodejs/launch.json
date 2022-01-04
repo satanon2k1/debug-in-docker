@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}/src",
+            "name": "Attach to Remote",
+            "port": 9229,
+            "remoteRoot": "/usr/src/app",
+            "request": "attach",
+            "type": "pwa-node",
+            "restart": true
+        }
+    ]
+}
