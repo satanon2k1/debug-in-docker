@@ -1,0 +1,22 @@
+services:
+  app: 
+    # image: crushftp/crushftp11:11.0.1_16-dev
+    build:
+      context: .
+    ports:
+      - 9021:21
+      - 9443:443
+      - 9080:8080
+      - 9090:9090
+      - 5005:5005
+
+    volumes:
+      - my_volume:/app
+
+volumes:
+  my_volume:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./app
